@@ -1,30 +1,12 @@
 package com.starterproj.DependencyStarterXML;
-
+/*Bean B*/
 public class Car {
-    private String name;
+    private String name="NotAssignedCaryet";
     private int cost;
     private int serialNo;
-    private Person Driver;
 
     public Car() {
     }
-
-
-
-    public Person getDriver() {
-        return Driver;
-    }
-
-    public void getDriverName(){
-       Driver.getDefaultName();
-    }
-
-    public void setDriver(Person driver) {
-        Driver = driver;
-    }
-
-
-
     public int getCost() {
         return cost;
     }
