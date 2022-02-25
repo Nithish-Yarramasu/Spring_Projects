@@ -17,6 +17,10 @@ public class Person {
         this.drives = drives;
     }
 
+    public void getSalary(String nam){
+        System.out.println("Default is XXX");
+    }
+
     public String isDriving(){
         return this.drives.getName();
     }

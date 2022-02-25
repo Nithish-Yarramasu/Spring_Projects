@@ -10,5 +10,8 @@
     <bean id="per" class="com.starterproj.DependencyStarterXML.Person" >
         <property name="drives" ref="car"/>
         <lookup-method name="likesCar" bean="car"/>
+        <replaced-method name="getSalary" replacer="Compute"/>
     </bean>
+
+    <bean id="Compute" class="com.starterproj.DependencyStarterXML.ComputeAnualSalary"/>
 </beans>

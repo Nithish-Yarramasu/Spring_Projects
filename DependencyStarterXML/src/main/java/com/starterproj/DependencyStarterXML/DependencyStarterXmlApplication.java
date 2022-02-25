@@ -20,6 +20,7 @@ public class DependencyStarterXmlApplication {
 
 		Person p=a.getBean("per",Person.class);
 		p.setName("Tom");
+		p.getSalary(p.getName());
 
 		/*Demonstrates dependency injection*/
 		System.out.println(p.getName()+ " is Driving Car " + p.isDriving());
